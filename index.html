@@ -3,147 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <title>Be latte - coffee house</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-   <header>
-       <nav class="main-nav">
-          <ul class="site-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul> 
-       </nav>
-   </header>
-   
-   <section class="welcome block">
-       <h1>Welcome to Be Latte</h1>
-       <p>
-           Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.
-       </p>
-       <button type="button">See menu</button>
-   </section>
-   
-   <article class="promo">
-       <h2>Coffee never tasted <U>so good</U>!</h2>
-       <p>
-           Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-       </p>
-   </article>
-   
-   <section class="menu">
-       <h2>Menu</h2>
-       <ul class="menu-offers">
-           <li>Coffee
-               <table>
-                   <tr>
-                       <td>Latte</td>
-                       <td>$3.00</td>
-                   </tr>
-                   <tr>
-                       <td>Mocha</td>
-                       <td>$3.25</td>
-                   </tr>
-                   <tr>
-                       <td>Expresso</td>
-                       <td>$3.75</td>
-                   </tr>
-                   <tr>
-                       <td>Capuccino</td>
-                       <td>$3.00</td>
-                   </tr>
-               </table>
-           </li>
-           <li>Tea
-               <table>
-                   <tr>
-                       <td>Iced tea</td>
-                       <td>$2.75</td>
-                   </tr>
-                   <tr>
-                       <td>Cold brew</td>
-                       <td>$3.25</td>
-                   </tr>
-                   <tr>
-                       <td>Jasmine green</td>
-                       <td>$3.75</td>
-                   </tr>
-                   <tr>
-                       <td>Peppermint Herbal</td>
-                       <td>$3.00</td>
-                   </tr>
-               </table>
-           </li>
-           <li>Desserts
-               <table>
-                   <tr>
-                       <td>Tiramisu</td>
-                       <td>$3.00</td>
-                   </tr>
-                   <tr>
-                       <td>Cheese cake</td>
-                       <td>$3.25</td>
-                   </tr>
-                   <tr>
-                       <td>Black forest</td>
-                       <td>$3.75</td>
-                   </tr>
-                   <tr>
-                       <td>Brownie</td>
-                       <td>$3.00</td>
-                   </tr>
-               </table>
-           </li>
-       </ul>
-       <button type="button">See full menu</button>
-   </section>
-   
-   <section class="reviews">
-       <h2>Testimonials</h2>
-       <blockquote>
-           <cite>Chris Parker</cite>
-           <p>Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
-       </blockquote>
-   </section>
-   
-   <section class="about-us">
-       <h2>Location</h2>
-       <ul>
-           <li>Location</li>
-           <p>Visit us at St. Thomas street 21st, suite 110, Santa Monica, California.</p>
-           <li>Hours
-               <table>
-                   <tr>
-                       <td>Mon-Sat:</td>
-                       <td>7am-8pm</td>
-                   </tr>
-                   <tr>
-                       <td><strong>Sunday</strong></td>
-                       <td>7am-5pm</td>
-                   </tr>
-               </table>
-           </li>
-           <li>Happy Hour
-               <table>
-                   <tr>
-                       <td><strong>Mon-Fri:</strong></td>
-                       <td>4pm-6pm</td>
-                   </tr>
-               </table>
-           </li>
-       </ul>
-   </section>
-   
-   <footer>
-       <ul>
-           <li><a href="#">Facebook</a></li>
-           <li><a href="#">Twitter</a></li>
-           <li><a href="#">Instagram</a></li>
-       </ul>
-       <p>St. Thomas street 21st, Suite 110, Santa Monica, California</p>
-   </footer>
-    
+
+<body class="container">
+    <header>
+        <nav class="main-nav">
+           <a class="header-logo" href="#">
+               <img src="img/latte-logo.png" alt="Latte logo" width="154" height="127">
+           </a>
+            <ul class="site-nav">
+                <li><a class="page current-page" href="#">Home</a></li>
+                <li><a class="page" href="#">About us</a></li>
+                <li><a class="page"  href="#">Menu</a></li>
+                <li><a class="page" href="#">Blog</a></li>
+                <li><a class="page" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-block">
+       <img src="img/coffee-shop.jpg" alt = "Coffee shop" width="1271" height="700">
+        <h1>Welcome to Be Latte</h1>
+        <p>
+            Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.
+        </p>
+        <button type="button btn-menu">See menu</button>
+    </section>
+
+    <article class="promo">
+        <h2>Coffee never tasted
+            <U>so good</U>!</h2>
+        <p>
+            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+    </article>
+
+    <section class="menu">
+        <h2>Menu</h2>
+        <ul class="menu-offers">
+            <li class="item-1">
+               <b>Coffee</b>
+                <table>
+                    <tr>
+                        <td>Latte</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>$3.25</td>
+                    </tr>
+                    <tr>
+                        <td>Expresso</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Capuccino</td>
+                        <td>$3.00</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="item-2">
+               <b>Tea</b>
+                <table>
+                    <tr>
+                        <td>Iced tea</td>
+                        <td>$2.75</td>
+                    </tr>
+                    <tr>
+                        <td>Cold brew</td>
+                        <td>$3.25</td>
+                    </tr>
+                    <tr>
+                        <td>Jasmine green</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Peppermint Herbal</td>
+                        <td>$3.00</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="item-3">
+               <b>Desserts</b>
+                <table>
+                    <tr>
+                        <td>Tiramisu</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese cake</td>
+                        <td>$3.25</td>
+                    </tr>
+                    <tr>
+                        <td>Black forest</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Brownie</td>
+                        <td>$3.00</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <button type="button">See full menu</button>
+    </section>
+
+    <section class="reviews">
+        <h2>Testimonials</h2>
+        <img src="img/realisticshots-coffee-photo.jpg" alt="Review">
+        <div class="author-review">
+        <blockquote>
+            <cite class="author">Chris Parker</cite>
+            <p>Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
+        </blockquote>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>Location</h2>
+        <div class="wrap">
+        <ul class="information">
+            <li class="info-item">Location</li>
+            <p>Visit us at St. Thomas street 21st, suite 110, Santa<br> Monica, California.</p>
+            <li class="info-item">Hours
+                <table>
+                    <tr>
+                        <td>Mon-Sat:</td>
+                        <td>7am-8pm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sunday</strong></td>
+                        <td>7am-5pm</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="info-item">Happy Hour
+                <table>
+                    <tr>
+                        <td><strong>Mon-Fri:</strong></td>
+                        <td>4pm-6pm</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <img src="/img/map.jpg" alt="Map" width="812" height="425">
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social-link">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>St. Thomas street 21st, Suite 110, Santa Monica, California</p>
+    </footer>
+
 </body>
 </html>

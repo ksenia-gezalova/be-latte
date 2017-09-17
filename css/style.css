@@ -1,0 +1,404 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font: inherit;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 15px;
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.2%;
+    z-index: 1;
+}
+
+.header-logo:hover {
+    transform: scale(1.1) translateX(-50%);
+}
+
+.site-nav {
+    background-color: #44403c;
+    
+    font-family: "Playfair Display", serif;
+    list-style: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    position: absolute;
+    width: 1230px;
+    left: 1%;
+}
+
+.site-nav {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.current-page {
+    color: #f5d76e;
+}
+
+.site-nav li:first-child {
+    margin-left: 30%;
+}
+
+.site-nav li:nth-child(2) {
+    margin-left: 2%;
+}
+
+.site-nav li:nth-child(3) {
+    margin-left: 19%;
+}
+
+.site-nav li:nth-child(4) {
+    margin-left: 2%;
+}
+
+.site-nav li:nth-child(5) {
+    margin-left: 2%;
+}
+
+.site-nav li:hover {
+    transform: scale(1.2);
+}
+
+.welcome-block {
+    text-align: center;
+}
+
+.welcome-block h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #f5d76e;
+    
+    position: absolute;
+    top: 7%;
+    left: 16%;
+}
+
+.welcome-block p {
+    position: absolute;
+    width: 460px;
+    text-align: left;
+    top: 9%;
+    left: 16%;
+    color: #ffffff;
+}
+
+.welcome-block button {
+    position: absolute;
+    left: 16%;
+    top: 11.6%;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 20px 62px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    
+}
+
+.welcome-block button:hover {
+    color: #000000;
+    background-color: #f5d76e;
+    opacity: 0.9;
+}
+
+.promo {
+    text-align: center;
+}
+
+.promo::after {
+    content: url("../img/icon-divider.png");
+    width: 39px;
+    height: 39px;
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+.promo h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-top: 85px;
+    font-size: 35px;
+}
+
+.promo p {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-1::before {
+    content: url("../img/cup-of-coffee.png");
+    background-repeat: no-repeat;
+    width: 394px;
+    height: 293px;
+}
+
+.item-2::before {
+    content: url("../img/tea-realisticshots.png");
+    background-repeat: no-repeat;
+    width: 394px;
+    height: 293px;
+}
+
+.item-3::before {
+    content: url("../img/dessert.png");
+    background-repeat: no-repeat;
+    width: 394px;
+    height: 293px;
+}
+
+.menu h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+}
+
+.menu button {
+    text-align: center;
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #000000;
+    text-transform: uppercase;
+    padding: 20px 62px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+
+.menu button:hover {
+    color: #000000;
+    background-color: #f5d76e;
+    opacity: 0.9;
+}
+
+.menu-offers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.menu-offers b {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.menu-offers table {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.menu-offers td:first-of-type {
+    font-weight: 800;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    position: relative;
+}
+
+.reviews {
+    position: relative;
+}
+
+.reviews h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 51px;
+}
+
+.reviews::before {
+    content: url("../img/icon-divider.png");
+    width: 39px;
+    height: 39px;
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    
+}
+
+blockquote {
+    position: absolute;
+    display: block;
+    left: 67%;
+    top: 60%;
+    text-align: center;
+    width: 280px;
+}
+
+blockquote::before {
+    content: ".01";
+    font-size: 90px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.03;
+    position: absolute;
+    top: -100%;
+    left: -22%;
+}
+
+blockquote::after {
+    content: ",,";
+    font-size: 190px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.03;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    letter-spacing: -9px;
+}
+
+.author-rview::before {
+    content: url("../img/bruno-bergher.png");
+    position: absolute;
+    top: 0%;
+}
+
+.author {
+    color: #f5d76e;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.about-us::before {
+    content: url("../img/icon-divider.png");
+    width: 39px;
+    height: 39px;
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+.about-us h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 55px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.information {
+    list-style: none;
+    background-color: #f5d76e;
+    padding-top: 50px;
+    padding-right: 80px;
+    margin: 0;
+}
+
+.info-item {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.info-item table {
+    text-transform: none;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+footer {
+    background-color: #39312f;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+   font-weight: 600;
+}
+
+.social-link {
+    list-style: none;
+}
+
+
+
+
+
