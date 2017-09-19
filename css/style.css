@@ -1,12 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    
     font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    
     background-color: #ffffff;
 }
 
@@ -14,6 +12,22 @@ a {
     text-decoration: none;
     color: #ffffff;
     font: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button {
@@ -36,33 +50,40 @@ a {
 .header-logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 0.2%;
     z-index: 1;
 }
 
 .header-logo:hover {
-    transform: scale(1.1) translateX(-50%);
+    -webkit-transform: scale(1.1) translateX(-50%);
+        -ms-transform: scale(1.1) translateX(-50%);
+            transform: scale(1.1) translateX(-50%);
 }
 
 .site-nav {
     background-color: #44403c;
-    
     font-family: "Playfair Display", serif;
     list-style: none;
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0;
     padding-top: 40px;
     padding-bottom: 40px;
-    
     position: absolute;
-    width: 1230px;
-    left: 1%;
+    width: 94.5%;
+    left: 1.2%;
 }
 
 .site-nav {
@@ -95,7 +116,9 @@ a {
 }
 
 .site-nav li:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .welcome-block {
@@ -107,7 +130,6 @@ a {
     font-weight: bold;
     font-size: 45px;
     color: #f5d76e;
-    
     position: absolute;
     top: 7%;
     left: 16%;
@@ -135,7 +157,6 @@ a {
     cursor: pointer;
     font-weight: 600;
     font-size: 13px;
-    
 }
 
 .welcome-block button:hover {
@@ -225,9 +246,16 @@ a {
 
 .menu-offers {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
 }
 
 .menu-offers b {
@@ -237,7 +265,9 @@ a {
     font-size: 40px;
     top: 30%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     text-align: center;
 }
 
@@ -281,16 +311,20 @@ a {
     margin-left: auto;
     margin-right: auto;
     vertical-align: top;
-    
 }
 
 blockquote {
-    position: absolute;
-    display: block;
-    left: 67%;
-    top: 60%;
+    background-color: #39312f;
     text-align: center;
-    width: 280px;
+    margin: 0;
+    padding-top: 200px;
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+}
+
+blockquote p {
+    color: #ffffff;
 }
 
 blockquote::before {
@@ -301,8 +335,8 @@ blockquote::before {
     color: #ffffff;
     opacity: 0.03;
     position: absolute;
-    top: -100%;
-    left: -22%;
+    top: 10%;
+    left: 5%;
 }
 
 blockquote::after {
@@ -312,16 +346,21 @@ blockquote::after {
     font-weight: bold;
     color: #ffffff;
     opacity: 0.03;
-    position: absolute;
-    top: 50%;
-    left: 85%;
     letter-spacing: -9px;
+    position: absolute;
+    top: 70%;
+    left: 77%;
 }
 
-.author-rview::before {
-    content: url("../img/bruno-bergher.png");
-    position: absolute;
-    top: 0%;
+.author-review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .author {
@@ -331,6 +370,15 @@ blockquote::after {
     font-size: 20px;
 }
 
+.author::before {
+    content: url("../img/bruno-bergher.png");
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
 
 .about-us::before {
     content: url("../img/icon-divider.png");
@@ -353,7 +401,10 @@ blockquote::after {
 }
 
 .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    margin: 10px 0px;
 }
 
 .information {
@@ -388,17 +439,34 @@ footer {
     background-color: #39312f;
     text-align: center;
     color: #ffffff;
+    padding-bottom: 100px;
+    padding-top: 40px;
 }
 
 footer p {
-   font-weight: 600;
+    margin-top: 30px;
 }
 
 .social-link {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
+.social-link svg {
+    padding: 0px 20px;
+}
 
-
-
-
+.map {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-image: url("../img/map.jpg");
+}
